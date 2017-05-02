@@ -1,0 +1,54 @@
+<!ELEMENT dataset (
+    cupcake*,
+    cupcaketopping*,
+    cupcakebottom*,
+    invoice*,
+    invoicedetails*,
+    user*)>
+
+<!ELEMENT cupcake EMPTY>
+<!ATTLIST cupcake
+    idCupcake CDATA #REQUIRED
+    cupcakeName CDATA #IMPLIED
+    idTopping CDATA #IMPLIED
+    idBottom CDATA #IMPLIED
+>
+
+<!ELEMENT cupcaketopping EMPTY>
+<!ATTLIST cupcaketopping
+    idTopping CDATA #REQUIRED
+    cupcakeToppingName CDATA #IMPLIED
+    price CDATA #REQUIRED
+>
+
+<!ELEMENT cupcakebottom EMPTY>
+<!ATTLIST cupcakebottom
+    idBottom CDATA #REQUIRED
+    cupcakeBottomName CDATA #IMPLIED
+    price CDATA #REQUIRED
+>
+
+<!ELEMENT invoice EMPTY>
+<!ATTLIST invoice
+    idInvoice CDATA #REQUIRED
+    idUser CDATA #IMPLIED
+    created CDATA #REQUIRED
+    paid CDATA #REQUIRED
+>
+
+<!ELEMENT invoicedetails EMPTY>
+<!ATTLIST invoicedetails
+    id CDATA #REQUIRED
+    idInvoice CDATA #REQUIRED
+    idCupcake CDATA #IMPLIED
+    qty CDATA #IMPLIED
+>
+
+<!ELEMENT user EMPTY>
+<!ATTLIST user
+    idUser CDATA #REQUIRED
+    username CDATA #IMPLIED
+    password CDATA #IMPLIED
+    balance CDATA #IMPLIED
+>
+
