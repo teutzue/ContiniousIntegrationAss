@@ -1,4 +1,4 @@
-Made by Adam Lewandowski, Teodor Costica
+Made by Adam Lewandowski, Teodor Costica, Lukasz Koziarsk
 
 We have used the exercise from class since it has all the infrastructure we needed.
 We mocked the db connection using mockito, we used other tools for example mocking resultsets in
